@@ -7,6 +7,8 @@ int main()
 {
     //          Q1
 
+    //time complexity : O(n) , space complexity : O(n)
+
     cout << "\nQUESTION 1\n";
 
     int n;
@@ -22,6 +24,7 @@ int main()
         cout << arr1[i] << ' ';
 
     //          Q2
+    //time complexity : O(n) , space complexity : O(n)
 
     cout << "\n\nQUESTION 2\n";
 
@@ -37,6 +40,8 @@ int main()
         cout << arr2[i] * arr2[i] << ' ';
 
     //          Q3
+    //time complexity : O(n) , space complexity : O(n)
+
 
     cout << "\n\nQUESTION 3\n";
 
@@ -55,6 +60,7 @@ int main()
         cout << arr3[i] * arr3[i] << ' ';
 
     //          Q4
+    //time complexity : O(1) , space complexity : O(1)
 
     cout << "\n\nQUESTION 4\n";
 
@@ -74,6 +80,7 @@ int main()
     }
 
     //          Q5
+    //time complexity : O(1) , space complexity : O(1)
 
     cout << "\nQUESTION 5\n";
 
@@ -86,6 +93,7 @@ int main()
     cout << "Sum of all elements = " << sum;
 
     //          Q6
+    //time complexity : O(1) , space complexity : O(1)
 
     cout << "\n\nQUESTION 6\n";
 
@@ -94,6 +102,7 @@ int main()
         cout << matrix[i][i] << ' ';
 
     //          Q7
+    //time complexity : O(n) , space complexity : O(n)
 
     cout << "\n\nQUESTION 7\n";
 
@@ -110,6 +119,7 @@ int main()
     cout << "Largest element = " << max;
 
     //          Q8
+    //time complexity : O(n) , space complexity : O(n)
 
     cout << "\n\nQUESTION 8\n";
 
@@ -127,6 +137,7 @@ int main()
     cout << "Number of even elements = " << even;
 
     //          Q9
+    //time complexity : O(1) , space complexity : O(1)
 
     cout << "\n\nQUESTION 9\n";
 
@@ -139,6 +150,7 @@ int main()
     }
 
     //          Q10
+    //time complexity : O(1) , space complexity : O(1)
 
     cout << "\nQUESTION 10\n";
 
@@ -151,6 +163,7 @@ int main()
     }
 
     //          Q11
+    //time complexity : O(1) , space complexity : O(1)
 
     cout << "\nQUESTION 11\n";
 
