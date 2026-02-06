@@ -1,8 +1,9 @@
 #include <iostream>
 #include <bits/stdc++.h>
-
 using namespace std;
 
+// LESSON 1, C++ BASICS
+// function to check palindrome
 
 bool checkPallindrome(string s)
 {
@@ -14,9 +15,7 @@ bool checkPallindrome(string s)
     return true;
 }
 int main()
-{ // LESSON 1, C++ BASICS
-
-    // function to check palindrome
+{ 
     string s;
     cin >> s;
     cout << (checkPallindrome(s)? "YES" : "NO");
