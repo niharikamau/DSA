@@ -7,7 +7,6 @@ using namespace std;
 
 bool checkPallindrome(string s)
 {
-    int flag =0;
     for (int i = 0; i < s.size() / 2; i++)
     {
         if (s[i] != s[s.size() - 1 - i]) return false;
