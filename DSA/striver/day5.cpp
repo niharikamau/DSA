@@ -58,7 +58,8 @@ int main()
     deque<int> dq;
 
     // stack
-    cout << "\n"<< "stack" << "\n";
+    cout << "\n"
+         << "stack" << "\n";
 
     stack<int> st, st1;
     st.push(2);
@@ -71,7 +72,8 @@ int main()
     st.swap(st1);
 
     // queue
-    cout << "\n"<< "queue" << "\n";
+    cout << "\n"
+         << "queue" << "\n";
     queue<int> q;
     q.push(1);    // {1}
     q.push(2);    // {1,2}
@@ -79,12 +81,14 @@ int main()
     cout << "queue front: " << q.front();
 
     // priority queue
-    cout << "\n" << "priority queue" << "\n";
+    cout << "\n"
+         << "priority queue" << "\n";
 
     priority_queue<int> pq;
 
     // set
-    cout << "\n" << "set" << "\n";
+    cout << "\n"
+         << "set" << "\n";
     set<int> seet;
     seet.insert(1);  //{1}
     seet.emplace(2); //{1,2}
@@ -97,38 +101,42 @@ int main()
     seet.clear();
 
     // multiset
-    cout << "\n" << "multi set" << "\n";
+    cout << "\n"
+         << "multi set" << "\n";
     multiset<int> ms;
     ms.insert(1); //{1}
     ms.insert(1); //{1,1}
 
     ms.erase(1);
-    cout<<"multiset  is empty? 1 for true and 0 for false :- "<<ms.empty();
+    cout << "multiset  is empty? 1 for true and 0 for false :- " << ms.empty();
 
-    //map
-    cout << "\n" << "map" << "\n";
-    map<char,int> mp;
-    mp['a']=3;
-    mp['c']=2;
-    mp['b']=2;
-    cout<<"map of b key is: "<<mp['b']<<"\n";
+    // map
+    cout << "\n"
+         << "map" << "\n";
+    map<char, int> mp;
+    mp['a'] = 3;
+    mp['c'] = 2;
+    mp['b'] = 2;
+    cout << "map of b key is: " << mp['b'] << "\n";
 
-    //sort and etc functions:
-     cout << "\n" << "functions" <<"\n";
-     vector<int> sort_ex ={1,2,3,1,2,9};
-     sort(sort_ex.begin(), sort_ex.end());
-    cout<<"ascending order : ";
+    // sort and etc functions:
+    cout << "\n"
+         << "functions" << "\n";
+    vector<int> sort_ex = {1, 2, 3, 1, 2, 9};
+    sort(sort_ex.begin(), sort_ex.end());
+    cout << "ascending order : ";
 
-     for(auto i : sort_ex){
-        cout<<i<<" ";
-     }
-     cout<<"\ndescending sorted vector: ";
-      sort(sort_ex.begin(), sort_ex.end(), greater<int>());
-      for(auto i : sort_ex){
-        cout<<i<<" ";
-     }
-      return 0;
+    for (auto i : sort_ex)
+    {
+        cout << i << " ";
+    }
+    cout << "\ndescending sorted vector: ";
+    sort(sort_ex.begin(), sort_ex.end(), greater<int>());
+    for (auto i : sort_ex)
+    {
+        cout << i << " ";
+    }
+    return 0;
 
-      // ALL STL CONTAINERS AND ALGOS DETAILS ARE COVERED IN NOTES. 
-
+    // ALL STL CONTAINERS AND ALGOS DETAILS ARE COVERED IN NOTES.
 }
