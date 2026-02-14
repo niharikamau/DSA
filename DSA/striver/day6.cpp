@@ -66,8 +66,17 @@ int main(){
     }
     cout<<"\n"<<y<<" is ";
     cnt ==2 ? cout<<"prime":cout<<"not prime";
-    
 
+    //GCD/HCF
+    int z1 =14,z2=12; //NOTE FORME:- DO CHECKOUT TIME COMPLEXITY OF THIS ALGO (EUCLIDEAN ALGORITHM)
+    int a=z1, b=z2;
+    while(z1>0&& z2>0){
+        if(z1>z2) z1 =  z1 %z2;
+        else z2=   z2%z1; //i have no idea why % is used instead of normal logic of subtraction
+
+    }
+    cout<<"\nHCD of "<<a<<" , "<<b<<"  is : ";
+    z1==0?cout<<z2:cout<<z1;
 
 
     return  0;
