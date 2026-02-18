@@ -36,6 +36,47 @@ void backtrackingReverseLinearly(int n, int i)
     backtrackingReverseLinearly(n, i + 1);
     cout << i << " ";
 }
+void parameterisedSum(int i, int sum)
+{
+    if (i < 1)
+    {
+        cout << sum;
+        return;
+    }
+    parameterisedSum(i - 1, sum + i);
+}
+void parameterisedFactorial(int i, int fac)
+{
+    if (i < 1)
+    {
+        cout << fac;
+        return;
+    }
+    parameterisedFactorial(i - 1, fac * (i));
+}
+void arrayReverse(int i, int arr[], int n)
+{
+    if (i >= n / 2)
+        return;
+    swap(arr[i], arr[n - i - 1]);
+    arrayReverse(i + 1, arr, n);
+}
+bool checkPallindrome(int i, string s)
+{
+    if (i >= s.size() / 2)
+        return true;
+    if (s[i] != s[s.size() - i - 1])
+        return false;
+    return checkPallindrome(i + 1, s);
+}
+int fibbonachi(int n)
+{
+    if (n <= 1)
+        return n;
+    int last = fibbonachi(n - 1);
+    int slast = fibbonachi(n - 2);
+    return last + slast;
+}
 int main()
 {
     // print name n times
@@ -68,15 +109,50 @@ int main()
     // print 1 to  n using backtracking
     cout << "\nprint 1 to n using backtracking\n";
 
-    cout<<"enter n: ";
+    cout << "enter n: ";
     cin >> n;
     backtrackingLinearly(n, n);
 
     // print n to 1 using backtracking
     cout << "\nprint n to 1 using backtracking\n";
 
-    cout<<"enter n: ";
+    cout << "enter n: ";
     cin >> n;
     backtrackingReverseLinearly(n, 1);
+    // parameterised sum 1 to n
+    cout << "\nparameterised recursion sum 1 to n\n";
+    cout << "enter n: \n";
+    cin >> n;
+    parameterisedSum(n, 0);
+
+    // factorial of n
+    cout << "\nparameterised recursion factorial of n\n";
+    cout << "enter n: \n";
+    cin >> n;
+    parameterisedFactorial(n, 1);
+
+    // reverse an array
+    cout << "\nreverse an array\n";
+    cout << "enter n: \n";
+    cin >> n;
+    int arr[n];
+    for (int i = 0; i < n; i++)
+        cin >> arr[i];
+    arrayReverse(0, arr, n);
+    for (int i = 0; i < n; i++)
+        cout << arr[i] << " ";
+
+    // check string is pallindrome
+    cout << "\nheck string is pallindrome\n";
+    cout << "enter string: \n";
+    cin >> name;
+    cout << checkPallindrome(0, name);
+
+    // fibbonci
+    cout << "\nfibbonaci\n";
+    cout << "enter n: \n";
+    cin >> n;
+    cout << fibbonachi(n);
+
     return 0;
 }
