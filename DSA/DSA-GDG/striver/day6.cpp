@@ -1,7 +1,9 @@
 #include<iostream>
 #include <bits/stdc++.h>
 using namespace std;
+
 // BASIC MATHS STRVER 
+
 int main(){
     //count digits
 

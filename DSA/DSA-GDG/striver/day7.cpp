@@ -1,6 +1,9 @@
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
+
+// RECURSION
+
 void printName(string name, int n, int i)
 {
     if (i > n)
@@ -136,6 +139,7 @@ int main()
     cout << "enter n: \n";
     cin >> n;
     int arr[n];
+    cout << "\nenter array " << n << " elements:\n";
     for (int i = 0; i < n; i++)
         cin >> arr[i];
     arrayReverse(0, arr, n);
@@ -143,7 +147,7 @@ int main()
         cout << arr[i] << " ";
 
     // check string is pallindrome
-    cout << "\nheck string is pallindrome\n";
+    cout << "\ncheck string is pallindrome\n";
     cout << "enter string: \n";
     cin >> name;
     cout << checkPallindrome(0, name);
