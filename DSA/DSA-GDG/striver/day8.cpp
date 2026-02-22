@@ -3,7 +3,6 @@
 using namespace std;
 
 // HASHING
-
 int main()
 { // array hashing
 
@@ -99,6 +98,8 @@ int main()
     }
     cout << "highest frequency: " << max_k << ", of freq: " << max_v << "\n";
     cout << "lowest frequency: " << min_k << ", of freq: " << min_v;
+
+    //character hashing is covered in notes.
 
     return 0;
 }
